@@ -26,7 +26,8 @@ Dans un terminal, exécutez le fichier `server.py` :
 ```bash
 python server.py 
 ```
-### 💻 Étape 2 : Lancer les clients
+### 💻 Étape 2 : Lancer les clients  
+
 &emsp;🖥️ En local (localhost)  
 
 &emsp;&emsp;Lancez client.py dans deux terminaux différents sur la même machine :  
