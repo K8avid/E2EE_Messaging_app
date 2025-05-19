@@ -5,9 +5,10 @@ import sys
 from cryptography_suite.asymmetric import generate_rsa_keypair, rsa_encrypt, rsa_decrypt, serialize_public_key,  load_public_key
 from cryptography_suite.encryption import aes_encrypt, aes_decrypt
 
+#======= Rentrer l'adresse IP de la machine du serveur ici ! =======
 HOST = '127.0.0.1'
-#HOST = '192.168.1.29'
-#HOST = '192.168.1.100'
+#===================================================================
+
 PORT = 12345
 BUFFER_SIZE = 1024
 KEY_SIZE = 4096
