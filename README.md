@@ -50,26 +50,26 @@ python server.py
 &emsp;&emsp;Remplacez l’adresse IP (à la ligne 10) par celle de la machine qui exécute le serveur.  
 
 ### 🧑‍🤝‍🧑 Étape 3 : Choisir les pseudos
-Chaque client doit entrer un pseudo unique.
+&emsp;Chaque client doit entrer un pseudo unique.  
 
-Par exemple :
+&emsp;Par exemple :  
 
-Client 1 : Alice
+&emsp;&emsp;Client 1 : Alice  
 
-Client 2 : Bob
+&emsp;&emsp;Client 2 : Bob  
 
 ### 🔒 Étape 4 : Démarrer une session privée
-Le client Alice envoie une demande de session privée a Bob :
+&emsp;Le client Alice envoie une demande de session privée a Bob :  
 
-```/private Bob```  
+&emsp;&emsp;```/private Bob```    
 
-Le client Alice accepte la session en répondant :
+&emsp;Le client Alice accepte la session en répondant :  
 
-```/private Alice```  
+&emsp;&emsp;```/private Alice```    
 
-Une fois la connexion établie, la communication est privée entre les deux clients.
+&emsp;Une fois la connexion établie, la communication est privée entre les deux clients.  
 
 # 📁 Fichiers du projet
-server.py : serveur principal
+&emsp;server.py : serveur principal  
 
-client.py : client à exécuter dans chaque terminal
+&emsp;client.py : client à exécuter dans chaque terminal  
