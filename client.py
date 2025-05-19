@@ -6,7 +6,8 @@ from cryptography_suite.asymmetric import generate_rsa_keypair, rsa_encrypt, rsa
 from cryptography_suite.encryption import aes_encrypt, aes_decrypt
 
 #======= Rentrer l'adresse IP de la machine du serveur ici ! =======
-HOST = '127.0.0.1'
+#=======          Si vous n'etes pas en localhost            =======     
+HOST = '127.0.0.1'  # remplacer 127.0.0.1 par l'adresse IP recuperé
 #===================================================================
 
 PORT = 12345
