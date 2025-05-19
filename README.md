@@ -1,4 +1,4 @@
-# 💬 Messagerie instantanée Privé en Python (Client-Serveur)
+# 💬 Messagerie instantanée Privé en Python
 
 Ce projet est une application simple de messagerie en ligne de commande entre deux clients, via un serveur Python. Elle peut être utilisée en local ou sur un réseau local (LAN).  
 
