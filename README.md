@@ -1,14 +1,15 @@
 # 💬 Chat Privé en Python (Client-Serveur)
 
-Ce projet est une application simple de messagerie en ligne de commande entre deux clients, via un serveur Python. Elle peut être utilisée en local ou sur un réseau local (LAN).
-Elle utilise d'abord un chiffrement asymetrique RSA pour un échange de clés AES, puis chiffre les messages en utilisant le chiffrement symetrique AES
+Ce projet est une application simple de messagerie en ligne de commande entre deux clients, via un serveur Python. Elle peut être utilisée en local ou sur un réseau local (LAN).  
+
+Elle utilise d'abord un chiffrement asymétrique RSA pour un échange de clés AES, puis chiffre les messages en utilisant le chiffrement symétrique AES.
 
 ---
 
 ## 📦 Prérequis
 
 - Python 3.x installé
-- Aucune bibliothèque externe nécessaire (tout est basé sur la bibliothèque standard)
+- pip install cryptography-suite
 
 ---
 ## 📁 Fichiers du projet
@@ -26,54 +27,46 @@ Dans un terminal, exécutez le fichier `server.py` :
 python server.py 
 ```
 ### 💻 Étape 2 : Lancer les clients
-🖥️ En local (localhost)
-Lancez client.py dans deux terminaux différents sur la même machine :
+&emsp;🖥️ En local (localhost)  
 
-bash
-Copier
-Modifier
-python client.py
-🌐 En réseau local (LAN)
-Récupérer l'adresse IPv4 de la machine sur laquelle tourne server.py :
+&emsp;&emsp;Lancez client.py dans deux terminaux différents sur la même machine :  
 
-Sous Windows :
+&emsp;&emsp;bash  
 
-bash
-Copier
-Modifier
-ipconfig
-Sous Unix-like / macOS :
+&emsp;&emsp;Copier  
 
-bash
-Copier
-Modifier
-ifconfig
-Modifier le fichier client.py :
+&emsp;&emsp;Modifier  
 
-Remplacez l’adresse IP (à la ligne 10) par celle de la machine qui exécute le serveur.
+&emsp;&emsp;python client.py    
+
+&emsp;🌐 En réseau local (LAN)  
+&emsp;&emsp;Récupérer l'adresse IPv4 de la machine sur laquelle tourne server.py :  
+
+&emsp;&emsp;Sous Windows : ipconfig  
+&emsp;&emsp;Sous Unix-like / macOS :  ifconfig 
+
+&emsp;Modifier le fichier client.py :  
+
+&emsp;&emsp;Remplacez l’adresse IP (à la ligne 10) par celle de la machine qui exécute le serveur.  
 
 ### 🧑‍🤝‍🧑 Étape 3 : Choisir les pseudos
 Chaque client doit entrer un pseudo unique.
 
 Par exemple :
 
-Client 1 : Nom_A
+Client 1 : Alice
 
-Client 2 : Nom_B
+Client 2 : Bob
 
 ### 🔒 Étape 4 : Démarrer une session privée
-Le client Nom_A envoie une demande de session privée :
+Le client Alice envoie une demande de session privée a Bob :
 
-arduino
-Copier
-Modifier
-/private Nom_B
-Le client Nom_B accepte la session en répondant :
+```/private Bob```  
 
-arduino
-Copier
-Modifier
-/private Nom_A
+Le client Alice accepte la session en répondant :
+
+```/private Alice```  
+
 Une fois la connexion établie, la communication est privée entre les deux clients.
 
 # 📁 Fichiers du projet
